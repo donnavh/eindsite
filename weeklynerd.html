@@ -6,139 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weekly Nerds</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="weeklynerd.css">
   </head>
   <body>
     <header>
-      <h1>Mijn Weekly Nerd Blog</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="leerdoelen.html">Leerdoelen</a></li>
-          <li><a href="weeklynerd.html">weekly Nerds</a></li>
-          <li><a href="hackaton.html">Hackaton</a></li>
+          <li><a href="weeklynerd.html">Weekly Nerd</a></li>
+          <li><a href="hackaton.html">Hackathon</a></li>
         </ul>
       </nav>
     </header>
 
-    <p>
-      In deze minor kregen wij van tevoren te horen dat wij elke week een
-      gastspreker zouden ontvangen die ons iets zou gaan vertellen over hun
-      expertise. Elke week iemand anders en elke week een ander onderwerp. Omdat
-      ik verder nog niet erg thuis ben in deze wereld ben ik erg benieuwd wat
-      mij allemaal verteld gaat worden.
-    </p>
+   
 
     <main>
-      <section>
-        <h2>Weekly Nerd #1 Kilian Valkhof</h2>
-        <h3>Stop Using JS for that</h3>
+
+      <h1>Weekly Nerds</h1>
+  
+      <p>
+        In deze minor kregen wij van tevoren te horen dat wij elke week een
+        gastspreker zouden ontvangen die ons iets zou gaan vertellen over hun
+        expertise. Elke week iemand anders en elke week een ander onderwerp. Omdat
+        ik verder nog niet erg thuis ben in deze wereld ben ik erg benieuwd wat
+        mij allemaal verteld gaat worden.
+      </p>
+      <h3>Sprekers </h3>
+      <section class="sprekers">
+        
+        <ul class="week-carousel">
+          <li><a href="#nerd1">Weekly Nerd #1 – Kilian Valkhof</a></li>
+          <li><a href="#nerd2">Weekly Nerd #2 – Peter Paul Koch</a></li>
+          <li><a href="#nerd3">Weekly Nerd #3 – Roel Nieskes</a></li>
+          <li><a href="#nerd4">Weekly Nerd #4 - Cassie Evans</a></li>
+          <li><a href="#nerd5">Weekly Nerd #5 - Nils Binder</a></li>
+          <li><a href="#nerd6">Weekly Nerd #6 - Jeremy Keith</a></li>
+          <li><a href="#nerd7">Weekly Nerd #7 - Julia Miocene</a></li>
+          <li><a href="#nerd8">Weekly Nerd #8 - Rosa</a></li>
+          <li><a href="#nerd9">Weekly Nerd #9 - Niels Leenheer</a></li>
+          <li><a href="#nerd10">Weekly Nerd #10 - Niene de Keijzer</a></li>
+        </ul>
+
+      </section>
+
+      <section id="nerd1" class="weeklynerd">
+        <h2>Weekly Nerd #1 – Kilian Valkhof</h2>
+        <h3>Stop Using JS for That</h3>
         <p>
-          Dit was de eerste weekly nerd die wij hebben gekregen, het was de
-          eerste week dus laten we zien hoe de Weekly Nerds eruit gaan zien.
-          Kilian was de eerste die ging vertellen. Over "Stop using JS for
-          that". Waarmee hij eigenlijk vertelde over the rule of least power,
-          wanneer je een makkelijkere manier kan gebruiken om iets te doen, moet
-          je dit eigenlijk altijd doen. Dus als je iets ook kan doen met CSS in
-          plaats van Javascript, doe dit vooral. Dit sprak mij erg aan omdat ik
-          nog weinig Javascript heb gebruikt en dit soms ook nog een beetje eng
-          vindt dus dit eigenlijk liever doe met CSS waar ik dan iets meer
-          ervaring mee heb. Vervolgens heeft hij verteld over wat styling
-          elementen, bijvoorbeeld wanneer je een checkbox wil stylen met CSS, je
-          zegt appearance:none zo zeg je, ik ga de styling doen en kan je
-          hiermee doen wat je wilt.
-          <input type="checkbox" class="checkbox_voorbeeld" />
-          Hij vertelde een aantal styling elementen waar ik nog niet eerder over
-          had gehoord, bijvoorbeeld focus-visible wanneer een element de focus
-          heeft en je hier de nadruk op wil leggen.
-          <input type="text" class="focus-visible" />
-          Input type="color" die je een color picker kan geven.
+          Dit was de eerste Weekly Nerd die wij hebben gekregen, het was de eerste week dus het was spannend om te zien hoe deze colleges eruit zouden zien.
+          Kilian trapte af met zijn presentatie <strong> "Stop using JS for that"</strong>, waarin hij vertelde over de "Rule of Least Power". Wanneer je iets simpeler kunt oplossen met bijvoorbeeld CSS in plaats van JavaScript, moet je dat volgens hem ook altijd doen.
+          Dat sprak mij erg aan omdat ik nog weinig ervaring met JavaScript heb en het soms spannend vind, CSS voelt voor mij vertrouwder.
+        </p>
+        <p>
+          Hij gaf voorbeelden zoals het stylen van checkboxes met <code>appearance: none</code>. Ook sprak hij over elementen zoals <code>:focus-visible</code> om visueel te reageren op toetsenbordnavigatie. 
+          <code>input type="color"</code> werd genoemd als eenvoudige manier om een kleurkiezer toe te voegen.
+        </p>
+        <p>
+          Verder vertelde hij over page transitions, accessibility features zoals <code>prefers-reduced-motion</code>, en het gebruik van <code>scroll-margin-top</code> om headers goed te laten functioneren.
+          Hij introduceerde ook de <code>&lt;details&gt;</code> en <code>&lt;summary&gt;</code> elementen, het stylen van <code>:marker</code>, en features zoals <code>:has()</code> en <code>field-sizing: content</code>. 
+          Tot slot besprak hij hoe HSL en het P3-kleurprofiel voor helderdere kleuren zorgen. Kortom: gebruik JavaScript alleen als het echt nodig is.
+        </p>
+
+
+      
+       
+        <div class="voorbeeld">
+          <label><input type="checkbox" class="checkbox_voorbeeld" /> Aangepaste checkbox</label>
+          <br />
+          <input type="text" class="focus-visible" placeholder="Focus zichtbaar?" />
+          <br />
           <input type="color" class="color_voorbeeld" />
-          Daarna verteldehij over in page transitions, waarbij je dus binnen een
-          pagina wordt doorgestuurd naar een ander punt op dezelfde pagina.
-          Hierna kwam een stukje over accessibility, bijvoorbeeld reduce motion
-          voor mensen die sommige dingen op een pagina liever niet zien, als in
-          iets wat te snel beweegt. Ook vertelde hij over scroll-margin-top,
-          hier liet hij zien dat als je bijvoorbeeld een header hebt en die een
-          scroll-margin-top geeft. Er een stukje aan de bovenkant blijft staan.
-          Hij vertelde een stukje over
-          <details>
-            Details
-            <summary>Summary</summary>
-          </details>
-          details, summary en wat dingen die je hiermee kan, zoals :marker om
-          het pijltje te stylen. Over @starting-style wanneer je CSS transitions
-          gaat gebruiken. Er werd wat verteld over de has selector, dat je kan
-          aangeven wanneer een element iets gecheckt heeft, je dan iets kan
-          stylen. Hij vertelde nog ietsover field-sizing:content, dat de input
-          even groot is als de content die erin staat. Tot slot, vertelde hij
-          over kleurgebruik en dat HSL en P-3 betere en meer heldere kleuren
-          zijn om te gebruiken. Eigenlijk dus, stop using JS in the future.
-        </p>
-
-        <p class="reflectie">
-          Ik vond dit een erg fijne spreker om naar te luisteren, het onderwerp
-          was fijn om te horen omdat dit iets is waar we veel aan hebben. Er
-          kwamen veel voorbeelden in waardoor je meteen kon zien hoe dit in
-          gebruik is. Voor een eerste spreker was dit een fijn verhaal.
-        </p>
+        </div>
+      
+      
+        <div class="reflectie">
+          <h4>💬 Reflectie</h4>
+          <p>
+            Ik vond dit een erg fijne spreker om naar te luisteren. Het onderwerp was interessant en direct toepasbaar in de praktijk. 
+            Doordat hij veel concrete voorbeelden gaf, werd het verhaal duidelijk en inspirerend. Voor een eerste spreker was dit een goed begin.
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h2>Weekly Nerd #2 Peter Paul Koch</h2>
-        <h3>Why shoud web be free?</h3>
+
+      <section id="nerd2" class="weeklynerd">
+        <h2>Weekly Nerd #2 – Peter Paul Koch</h2>
+        <h3>Why Should the Web Be Free?</h3>
+      
         <p>
-          Voor onze tweede Weekly Nerd hadden wij Peter Paul Koch die kwam
-          vertellen over een project waar hij mee bezig was. Namelijk, het
-          opzetten van een manier waarop wij als gebruiker moeten gaan betalen
-          voor het web wat wij nu gratis gebruiken, het hoeft niet veel te zijn
-          maar hij wil dat dit aangeleerd wordt.
-
-          <ul> Waarom is het web gratis?
-                <li>
-                    We moeten aanleren om te betalen voor het web
-                </li>
-                <li>Betalen voor je bezoeken aan websites </li>
-                <li>Met tijd gaan meten hoeveel je dan betaalt voor een website</li>
-          </ul>
-
-          Hoe moet dit gaan werken? 
-          Hij is met een team aan het nadenken over hoe dit in werking zou gaan, zij zeggen dat je een extentie moet gaan
-        krijgen op je computer, of in chrome bijvoorbeeld. Waar je dan geld op gaat laden per maand, wat in je wallet gaat komen. 
-        Wanneer je dan een bepaalde website bezoekt meet hij hoe lang je hierop hebt gezeten en rekent zo met je wallet af 
-        voor het gebruik hiervan. Of dat je bijvoorbeeld aan het einde van het gebruiken van een website aangeeft hoeveel je hiervoor wil betalen, 
-        het hoeft niet veel te zijn maar je geeft zo aan dat je hier een bepaald bedrag voor over hebt. 
-
-        Hij had het over streaming vs. post paid
-
-        <ul> Streaming
-            <li>Only online</li>
-            <li>No need to retain payment data</li>
-            <li>Site owner is paid immediately</li>
-            <li>Many requests</li>
-        </ul>
-        <ul>Post-paid
-            <li>Offline and online</li>
-            <li>Payment data retained</li>
-            <li>Site owner promised to be paid "later"</li>
-            <li>Few requests</li>
-        </ul>
-
-        Maar waarom zouden we dit moeten implementeren in het web terwijl het prima werkt zoals het nu doet? 
-        Om meer content te krijgen wat mensen graag schrijven, en niet wat grote bedrijven willen delen en toelaten wat zij zelf willen zien.
-        Hij vertelt dus dat hij denkt dat mensen op deze manier meer zelfstandig schrijven voor de mensen zelf en niet alleen wat goedgekeurd is door een groter bedrijf. 
+          Voor onze tweede Weekly Nerd kwam Peter Paul Koch vertellen over een project waar hij mee bezig is: een nieuwe manier waarop wij als gebruikers zouden kunnen gaan betalen voor het web. 
+          Niet veel, maar symbolisch – zodat we leren dat informatie ook waarde heeft. Volgens hem moet dit langzaam worden aangeleerd.
         </p>
-        <p class="reflectie">
-            Wat vond ik van dit verhaal? Hoe hij het vertelde vond ik het erg interessant, het is iets waar hij en nog een groep al langere tijd mee bezig is en 
-            dus veel overna gedacht heeft. Het idee begrijp ik dat we tegenwoordig gewend zijn om veel te makkelijk dingen te kunnen vinden en eigenlijk overal toegang 
-            tot hebben. Ik snap ook dat hij zegt dat mensen zo misschien meer vrijheid voelen om te doen wat zij zelf willen en hier dan ook toe beloond kunnen worden. 
-            Ik denk alleen dat dit in de praktijk nooit zo zou werken. Hij is iemand die zelf ook werkt aan het web en weet hoe het in elkaa zit en wat je hiervoor moet doen.
-            Hoewel ik denk dat de meeste normale mensen hier geen inzicht in hebbenn en niet snel zouden willen meewerken om voor iets te betalen wat ze normaal gesproken 
-            niet hadden gehoeven. Toch vond ik het erg interessant om te horen hoe iemand een verhaal vertelt over een groot project waar al zoveel geld, tijd en aandacht inzit 
-            en waar iemand zo veel passie voor heeft. Er zit veel gedachte achter, echter weet ik niet of iedereen dit zal zien. 
+      
+        <p>
+          Hij stelde vragen zoals: "Waarom is het web eigenlijk gratis?" en gaf voorbeelden van hoe een betalingssysteem eruit zou kunnen zien. 
+          Zo zou er bijvoorbeeld een extensie in je browser kunnen komen waar je maandelijks geld op zet. Dit komt in een digitale wallet, en afhankelijk van hoelang je op een website bent, wordt er automatisch afgerekend.
+          Een alternatief idee was dat je achteraf zelf bepaalt hoeveel je wilt betalen voor het gebruik van een site.
         </p>
+      
+        <h4>💸 Streaming vs. Post-paid modellen</h4>
+        <ul>
+          <li><strong>Streaming:</strong> Alleen online, geen opslag van betaalgegevens, directe betaling aan de site-eigenaar, veel kleine verzoeken.</li>
+          <li><strong>Post-paid:</strong> Zowel offline als online, betaalgegevens worden opgeslagen, betaling volgt later, minder verzoeken.</li>
+        </ul>
+      
+        <p>
+          Hij vroeg zich af waarom we dit soort modellen zouden implementeren, terwijl het huidige web ‘gratis’ goed werkt. 
+          Het antwoord: dit zou onafhankelijke contentcreatie stimuleren. Niet alleen maar content die grote bedrijven goedkeuren, maar verhalen van echte mensen — voor echte mensen.
+        </p>
+      
+        <div class="reflectie">
+          <h4>💬 Reflectie</h4>
+        
+      <p>
+          
+          Wat vond ik van dit verhaal? Hoe hij het vertelde vond ik het erg interessant, het is iets waar hij en nog een groep al langere tijd mee bezig is en 
+          dus veel overna gedacht heeft. Het idee begrijp ik, dat we tegenwoordig gewend zijn om veel te makkelijk dingen te kunnen vinden en eigenlijk overal toegang 
+          tot hebben. Ik snap ook dat hij zegt dat mensen zo misschien meer vrijheid voelen om te doen wat zij zelf willen en hier dan ook toe beloond kunnen worden. 
+        </p>
+          <p>
+          Ik denk alleen dat dit in de praktijk nooit zo zou werken. Hij is iemand die zelf ook werkt aan het web en weet hoe het in elkaa zit en wat je hiervoor moet doen.
+          Hoewel ik denk dat de meeste normale mensen hier geen inzicht in hebbenn en niet snel zouden willen meewerken om voor iets te betalen wat ze normaal gesproken 
+          niet hadden gehoeven. Toch vond ik het erg interessant om te horen hoe iemand een verhaal vertelt over een groot project waar al zoveel geld, tijd en aandacht inzit 
+          en waar iemand zo veel passie voor heeft. Er zit veel gedachte achter, echter weet ik niet of iedereen dit zal zien. 
+      </p>
+        </div>
       </section>
 
-      <section>
+      
+      <section id="nerd3" class="weeklynerd">
         <h2>Weekly Nerd #3 Roel Nieskes</h2>
         <h3>Typografie</h3>
         <p>
@@ -148,8 +146,11 @@
             Hij vertelde ook over het gebruik van de `name` attribute bij formulieren. Wanneer meerdere inputs dezelfde `name` hebben, worden ze gegroepeerd en horen ze bij elkaar. Dit is handig bij bijvoorbeeld radiobuttons of checkboxes.
 
             Daarnaast legde hij uit wat het `disabled` attribute doet. Dit attribuut zorgt ervoor dat een input niet bewerkbaar is door de gebruiker. Een voorbeeld hiervan is:
-
-            <input type="text" name="example" disabled />
+            <figure>
+              <input type="text" name="example" disabled />
+              <figcaption>Voorbeeld van een disabled input</figcaption>
+            </figure>
+            
             bij een fieldset hoort ook een legend die een beschrijving geeft van de groep velden. Dit helpt bij de toegankelijkheid en maakt het duidelijker waar de velden over gaan. Een voorbeeld hiervan is:
 
             <fieldset>
@@ -170,7 +171,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="nerd4" class="weeklynerd">
         <h2>Weekly Nerd #4 Cassie Evans</h2>
         <p>
           De volgende week kregen wij een lecture van Cassie Evans, zij werkt bij GSAP en ging ons vertellen over wat we hier allemaal mee kunnen.
@@ -188,7 +189,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="nerd5" class="weeklynerd">
         <h2>Weekly Nerd #5 Nils Binder</h2>
         <p>
           Nils binder is een frontend designer en vertelde over hoe hij gebruik maakt van HTML & CSS. Hij heeft ons in een workshop uitleg gegeven over zijn gebruik van 
@@ -200,7 +201,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="nerd6" class="weeklynerd">
         <h2>Weekly Nerd #6 Jeremy Keith</h2>
         <p>
          
@@ -221,7 +222,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="nerd7" class="weeklynerd">
         <h2>Weekly Nerd #7 Julia Miocene</h2>
         <p>
           Julia kwam bij ons vertellen over animeren, en wat de mogelijkheden hier allemaal mee zijn. Toen zij liet zien wat voor projecten zij allemaal had gemaakt,
@@ -236,7 +237,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="nerd8" class="weeklynerd">
         <h2>Weekly Nerd #8 Rosa</h2>
         <h3>Hackers united</h3>
         <p>
@@ -262,7 +263,7 @@
       </section>
 
 
-      <section>
+      <section id="nerd9" class="weeklynerd">
         <h2>Weekly Nerd #9 Niels Leenheer</h2>
         <h3>Hoe maak je een kassa met webtechnologie</h3>
         <p>
@@ -289,7 +290,7 @@
         
       </section>
 
-      <section>
+      <section id="nerd10" class="weeklynerd">
         <h2>Weekly Nerd #10 Nienke de Keijzer</h2>
 
         <p>

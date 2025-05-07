@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leerdoelen</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="leerdoelen.css" />
   </head>
   <body>
+
+    <div class="blob blob1"></div>
+   <div class="blob blob2"></div>
+
     <header>
-      <h1>Mijn Leerdoelen</h1>
+      
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="leerdoelen.html">Leerdoelen</a></li>
-          <li><a href="weeklynerd.html">Weekly Nerd</a></li>
-          <li><a href="hackaton.html">Hackaton</a></li>
+          <li><a href="weeklynerd.html">Weekly Nerds</a></li>
+          <li><a href="hackaton.html">Hackathon</a></li>
         </ul>
       </nav>
     </header>
 
+    
     <main>
-      <section class="leerdoelen-februari">
-        <h2>Leerdoelen</h2>
+      <h1>Mijn Leerdoelen</h1>
+
+      <section class="card">
 
         <h3>Eerst leerdoelen, week 1</h3>
         <p>
@@ -31,7 +38,7 @@
           Omdat ik nog niet veel had geoefend met code waren mijn leerdoelen
           redelijk groot omdat er veel te leren valt voor mij.
         </p>
-        <ul>
+        <ul class="leerdoelen">
           <li>Mezelf uitdagen</li>
           <li>Nieuwe dingen durven proberen</li>
           <li>Blijven vragen als ik ergens niet uit kom</li>
@@ -53,7 +60,7 @@
         </p>
 </section>
 
-  <section class="leerdoelen-mei">
+  <section class="card">
         <h3>Leerdoelen Mei</h3>
         <p>
           Nu we over de helft van de minor zijn, zijn de leerdoelen uiteraard
@@ -67,8 +74,14 @@
           kunnen als de vraag aan mij gesteld was. Maar toch heb ik nog steeds
           doelen voor mezelf die ik wil halen.
         </p>
+
+
         <ul>
-          <li>Uit mijn comfort zone stappen
+          
+          <details class="doel">
+            <summary>
+              Uit mijn comfort zone stappen
+            </summary>
             <p>
               Deze is een beetje hetzelfde als aan het begin, maar toch net iets
               anders. Ik merk dat ik in opdrachten toch vaak nog naar de bekende
@@ -80,26 +93,31 @@
               moeten weten dat ik veel meer kan dan ik durf te zeggen over mijzelf
               soms.
             </p>
-          </li>
-          
-          <li>Meer vragen stellen aan mensen die het weten
-            <p>
-              Omdat veel dingen voor mij zo nieuw zijn, vind ik het soms lastig om erin te komen
-              en merk ik dat ik dingen meer stapsgewijs moet gaan uitvoeren om het voor mezelf te 
-              begrijpen. Dan neig ik ernaar om vragen te stellen aan de mensen om mijn heen. Die mij
-              het wel uitleggen maar het is meer van belang om het correct te kunnen begrijpen. Meer
-              vragen aan docenten zodat ik het beter begrijpen. 
-            </p>
-          </li>
-          <li>Meer creativiteit in mijn werk stoppen
-            <p>
-              Ik merk dat ik het soms lastig vind om creatief te zijn. Ik heb
-              vaak een idee in mijn hoofd maar durf deze niet uit te werken omdat
-              ik bang ben dat het niet goed genoeg is. Maar ik wil mezelf
-              uitdagen om dit wel te doen en mijn ideeën meer uit te werken.
-            </p>
-          </li>
-        </ul>
+          </details>
+
+
+       <details class="doel">
+        <summary>Meer vragen stellen aan mensen die het weten</summary>
+        <p>
+          Omdat veel dingen voor mij zo nieuw zijn, vind ik het soms lastig om erin te komen
+          en merk ik dat ik dingen meer stapsgewijs moet gaan uitvoeren om het voor mezelf te 
+          begrijpen. Dan neig ik ernaar om vragen te stellen aan de mensen om mijn heen. Die mij
+          het wel uitleggen maar het is meer van belang om het correct te kunnen begrijpen. Meer
+          vragen aan docenten zodat ik het beter begrijpen. 
+        </p>
+       </details>
+
+       <details class="doel">
+        <summary>Meer creativiteit in mijn werk stoppen</summary>
+        <p>
+          Ik merk dat ik het soms lastig vind om creatief te zijn. Ik heb
+          vaak een idee in mijn hoofd maar durf deze niet uit te werken omdat
+          ik bang ben dat het niet goed genoeg is. Maar ik wil mezelf
+          uitdagen om dit wel te doen en mijn ideeën meer uit te werken.
+        </p>
+       </details>
+
+      
       </section>
     </main>
 
