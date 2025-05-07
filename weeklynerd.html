@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerds</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mijn Weekly Nerd Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leerdoelen.html">Leerdoelen</a></li>
+          <li><a href="weeklynerd.html">weekly Nerds</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p>
+      In deze minor kregen wij van tevoren te horen dat wij elke week een
+      gastspreker zouden ontvangen die ons iets zou gaan vertellen over hun
+      expertise. Elke week iemand anders en elke week een ander onderwerp. Omdat
+      ik verder nog niet erg thuis ben in deze wereld ben ik erg benieuwd wat
+      mij allemaal verteld gaat worden.
+    </p>
+
+    <main>
+      <section>
+        <h2>Weekly Nerd #1 Kilian Valkhof</h2>
+        <h3>Stop Using JS for that</h3>
+        <p>
+          Dit was de eerste weekly nerd die wij hebben gekregen, het was de
+          eerste week dus laten we zien hoe de Weekly Nerds eruit gaan zien.
+          Kilian was de eerste die ging vertellen. Over "Stop using JS for
+          that". Waarmee hij eigenlijk vertelde over the rule of least power,
+          wanneer je een makkelijkere manier kan gebruiken om iets te doen, moet
+          je dit eigenlijk altijd doen. Dus als je iets ook kan doen met CSS in
+          plaats van Javascript, doe dit vooral. Dit sprak mij erg aan omdat ik
+          nog weinig Javascript heb gebruikt en dit soms ook nog een beetje eng
+          vindt dus dit eigenlijk liever doe met CSS waar ik dan iets meer
+          ervaring mee heb. Vervolgens heeft hij verteld over wat styling
+          elementen, bijvoorbeeld wanneer je een checkbox wil stylen met CSS, je
+          zegt appearance:none zo zeg je, ik ga de styling doen en kan je
+          hiermee doen wat je wilt.
+          <input type="checkbox" class="checkbox_voorbeeld" />
+          Hij vertelde een aantal styling elementen waar ik nog niet eerder over
+          had gehoord, bijvoorbeeld focus-visible wanneer een element de focus
+          heeft en je hier de nadruk op wil leggen.
+          <input type="text" class="focus-visible" />
+          Input type="color" die je een color picker kan geven.
+          <input type="color" class="color_voorbeeld" />
+          Daarna verteldehij over in page transitions, waarbij je dus binnen een
+          pagina wordt doorgestuurd naar een ander punt op dezelfde pagina.
+          Hierna kwam een stukje over accessibility, bijvoorbeeld reduce motion
+          voor mensen die sommige dingen op een pagina liever niet zien, als in
+          iets wat te snel beweegt. Ook vertelde hij over scroll-margin-top,
+          hier liet hij zien dat als je bijvoorbeeld een header hebt en die een
+          scroll-margin-top geeft. Er een stukje aan de bovenkant blijft staan.
+          Hij vertelde een stukje over
+          <details>
+            Details
+            <summary>Summary</summary>
+          </details>
+          details, summary en wat dingen die je hiermee kan, zoals :marker om
+          het pijltje te stylen. Over @starting-style wanneer je CSS transitions
+          gaat gebruiken. Er werd wat verteld over de has selector, dat je kan
+          aangeven wanneer een element iets gecheckt heeft, je dan iets kan
+          stylen. Hij vertelde nog ietsover field-sizing:content, dat de input
+          even groot is als de content die erin staat. Tot slot, vertelde hij
+          over kleurgebruik en dat HSL en P-3 betere en meer heldere kleuren
+          zijn om te gebruiken. Eigenlijk dus, stop using JS in the future.
+        </p>
+
+        <p class="reflectie">
+          Ik vond dit een erg fijne spreker om naar te luisteren, het onderwerp
+          was fijn om te horen omdat dit iets is waar we veel aan hebben. Er
+          kwamen veel voorbeelden in waardoor je meteen kon zien hoe dit in
+          gebruik is. Voor een eerste spreker was dit een fijn verhaal.
+        </p>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #2 Peter Paul Koch</h2>
+        <h3>Why shoud web be free?</h3>
+        <p>
+          Voor onze tweede Weekly Nerd hadden wij Peter Paul Koch die kwam
+          vertellen over een project waar hij mee bezig was. Namelijk, het
+          opzetten van een manier waarop wij als gebruiker moeten gaan betalen
+          voor het web wat wij nu gratis gebruiken, het hoeft niet veel te zijn
+          maar hij wil dat dit aangeleerd wordt.
+
+          <ul> Waarom is het web gratis?
+                <li>
+                    We moeten aanleren om te betalen voor het web
+                </li>
+                <li>Betalen voor je bezoeken aan websites </li>
+                <li>Met tijd gaan meten hoeveel je dan betaalt voor een website</li>
+          </ul>
+
+          Hoe moet dit gaan werken? 
+          Hij is met een team aan het nadenken over hoe dit in werking zou gaan, zij zeggen dat je een extentie moet gaan
+        krijgen op je computer, of in chrome bijvoorbeeld. Waar je dan geld op gaat laden per maand, wat in je wallet gaat komen. 
+        Wanneer je dan een bepaalde website bezoekt meet hij hoe lang je hierop hebt gezeten en rekent zo met je wallet af 
+        voor het gebruik hiervan. Of dat je bijvoorbeeld aan het einde van het gebruiken van een website aangeeft hoeveel je hiervoor wil betalen, 
+        het hoeft niet veel te zijn maar je geeft zo aan dat je hier een bepaald bedrag voor over hebt. 
+
+        Hij had het over streaming vs. post paid
+
+        <ul> Streaming
+            <li>Only online</li>
+            <li>No need to retain payment data</li>
+            <li>Site owner is paid immediately</li>
+            <li>Many requests</li>
+        </ul>
+        <ul>Post-paid
+            <li>Offline and online</li>
+            <li>Payment data retained</li>
+            <li>Site owner promised to be paid "later"</li>
+            <li>Few requests</li>
+        </ul>
+
+        Maar waarom zouden we dit moeten implementeren in het web terwijl het prima werkt zoals het nu doet? 
+        Om meer content te krijgen wat mensen graag schrijven, en niet wat grote bedrijven willen delen en toelaten wat zij zelf willen zien.
+        Hij vertelt dus dat hij denkt dat mensen op deze manier meer zelfstandig schrijven voor de mensen zelf en niet alleen wat goedgekeurd is door een groter bedrijf. 
+        </p>
+        <p class="reflectie">
+            Wat vond ik van dit verhaal? Hoe hij het vertelde vond ik het erg interessant, het is iets waar hij en nog een groep al langere tijd mee bezig is en 
+            dus veel overna gedacht heeft. Het idee begrijp ik dat we tegenwoordig gewend zijn om veel te makkelijk dingen te kunnen vinden en eigenlijk overal toegang 
+            tot hebben. Ik snap ook dat hij zegt dat mensen zo misschien meer vrijheid voelen om te doen wat zij zelf willen en hier dan ook toe beloond kunnen worden. 
+            Ik denk alleen dat dit in de praktijk nooit zo zou werken. Hij is iemand die zelf ook werkt aan het web en weet hoe het in elkaa zit en wat je hiervoor moet doen.
+            Hoewel ik denk dat de meeste normale mensen hier geen inzicht in hebbenn en niet snel zouden willen meewerken om voor iets te betalen wat ze normaal gesproken 
+            niet hadden gehoeven. Toch vond ik het erg interessant om te horen hoe iemand een verhaal vertelt over een groot project waar al zoveel geld, tijd en aandacht inzit 
+            en waar iemand zo veel passie voor heeft. Er zit veel gedachte achter, echter weet ik niet of iedereen dit zal zien. 
+        </p>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #3 Roel Nieskes</h2>
+        <h3>Typografie</h3>
+        <p>
+            Voor deze derde spreker heeft Roel iets verteld over typografie, wat natuurlijk erg handig is voor ons om te weten. 
+            Hij heeft verteld over hyphenation, het afronden van woorden wanneer de zin te lang is. Kerning, waar je iets zegt over de ruimte tussen 
+            letters. Vervolgens vertelde hij over forms, waar je een input en een output hebt. Ook heb je bij forms een fieldset, welke een groep van velden aangeeft. 
+            Hij vertelde ook over het gebruik van de `name` attribute bij formulieren. Wanneer meerdere inputs dezelfde `name` hebben, worden ze gegroepeerd en horen ze bij elkaar. Dit is handig bij bijvoorbeeld radiobuttons of checkboxes.
+
+            Daarnaast legde hij uit wat het `disabled` attribute doet. Dit attribuut zorgt ervoor dat een input niet bewerkbaar is door de gebruiker. Een voorbeeld hiervan is:
+
+            <input type="text" name="example" disabled />
+            bij een fieldset hoort ook een legend die een beschrijving geeft van de groep velden. Dit helpt bij de toegankelijkheid en maakt het duidelijker waar de velden over gaan. Een voorbeeld hiervan is:
+
+            <fieldset>
+              <legend>Persoonlijke informatie</legend>
+              <label for="naam">Naam:</label>
+              <input type="text" id="naam" name="naam" />
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" />
+            </fieldset>
+
+            Daarna vertelde hij nog over inputs en input types, zoals field-sizing en option:optgroup, waarin je elementen groepeert binnenin een select element
+            
+        </p>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #4 Cassie Evans</h2>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #5 Nils Binder</h2>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #6 Jeremy Keith</h2>
+      </section>
+
+      <section>
+        <h2>Weekly Nerd #7 Julia Miocene</h2>
+      </section>
+      <section>
+        <h2>Weekly Nerd #8 Rosa</h2>
+      </section>
+      <section>
+        <h2>Weekly Nerd #9 Niels Leenheer</h2>
+      </section>
+      <section>
+        <h2>Weekly Nerd #10 Nienke de Keijzer</h2>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mijn Gastspreker Blog. Alle rechten voorbehouden.</p>
+    </footer>
+  </body>
+</html>
