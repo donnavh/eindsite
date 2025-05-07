@@ -1,0 +1,32 @@
+:root{
+
+}
+
+.index-header{
+    background-color: black;
+
+    padding: 20px; 
+}
+
+.index-header h1{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(33, 48, 166, 0.5);
+}
+
+.intro{
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.intro h2{
+    color: darkblue;
+}
+
+.blog-post{
+    background-color: #fff8dc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
