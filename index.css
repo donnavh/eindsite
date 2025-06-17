@@ -100,13 +100,6 @@ h1 {
     color: darkblue;
 }
 
-/* .blog-post{
-    background-color: #dce8ff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
 
 .blog-post, .card {
     background-color: var(--card-bg);
