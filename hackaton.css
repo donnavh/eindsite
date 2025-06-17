@@ -1,3 +1,15 @@
+
+.hackathon{
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
 img{
     /* max-width: 100%;
     height: auto; */
