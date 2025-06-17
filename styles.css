@@ -1,31 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-:root{
-    --background-color: hsl(0, 0%, 89%);
+:root {
+  --background-color: hsl(0, 0%, 95%);
+  /* Lighter background for better contrast */
 
-    --bg-color: #fff8f9;         /* zachte achtergrond */
-    --text-color: #333;
-    --accent-color: #f8c8dc;     /* lichtroze */
-    --accent-hover: #d36c93;     /* donkerder roze bij hover */
-    --heading-color: #222;
-    --card-bg: white;
-    --shadow: rgba(0, 0, 0, 0.05);
-    --radius: 16px;
-
-    --accent: #f8c8dc;   
-    --nav-bg: #ffffff;
-    --nav-text: #333333;
-    --nav-hover-bg: #f8c8dc;
-    --nav-hover-text: white; 
-  
+  --bg-color: #fff5f7;
+  /* Softer but higher contrast background */
+  --text-color: #222;
+  /* Darker text for better readability */
+  --accent-color: #8B0E3A;
+  /* Slightly darker primary accent color */
+  --accent-hover: #B23C63;
+  /* Darker hover color for better contrast */
+  --heading-color: #111;
+  /* Stronger heading color */
+  --card-bg: #ffffff;
+  /* Keep card background white for clarity */
+  --shadow: rgba(0, 0, 0, 0.1);
+  /* Slightly darker shadow for better depth */
+  --nav-bg: #fdfdfd;
+  /* Slightly darker navigation background */
+  --nav-text: #222222;
+  /* Darker navigation text */
+  --nav-hover-bg: #8B0E3A;
+  /* Match hover background with accent color */
+  --nav-hover-text: #ffffff;
+  /* White text on hover for better contrast */
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Quicksand', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -38,115 +47,108 @@ body{
 
 
 header {
-    background-color: var(--nav-bg);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    scroll-margin-top: 100px;
-    padding: 1em;
-    top: 0;
-    z-index: 1000;
-  }
-  
-nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin: 0;
-      padding: 1rem ;
-    }
-  
-nav ul li {
-      margin: 0;
-    }
-  
-nav ul li a {
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      color: var(--accent-color, #b3006b);
-      padding: 0.5em 1em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-  
-nav ul li a:hover {
-      background-color: var(--nav-hover-bg);
-      color: var(--nav-hover-text);
-    }
-
-@media (max-width: 600px) {
-        nav ul {
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
-        }
-      
-        nav ul li a {
-          display: block;
-          width: 100%;
-          text-align: center;
-        }
-      }
-
-h1, h2, h3, h4 {
-    color: var(--heading-color);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  background-color: var(--nav-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  scroll-margin-top: 100px;
+  padding: 1em;
+  top: 0;
+  z-index: 1000;
 }
 
-h1{
-    color: var(--heading-color);
-    font-size: 2rem;
-    margin-top: 2rem;
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--accent-color, #b3006b);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--nav-hover-bg);
+  color: var(--nav-hover-text);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
     text-align: center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.6rem;
-    margin-top: 2rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 
 p {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
+}
 
 main {
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-  }
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
 
 
 section {
-    margin-bottom: 3rem;
-  }
-  
+  margin-bottom: 3rem;
+}
+
 a {
-    color: var(--accent-hover);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
+  color: var(--accent-hover);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 a:hover {
-    color: var(--accent-color);
-  }
+  color: var(--accent-color);
+}
 
 
 footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    color: #888;
-    background-color: #fdfdfd;
-  }
-
-
-
-
-
-
-
-
-
-
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #fdfdfd;
+}
