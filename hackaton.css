@@ -1,16 +1,15 @@
-
-.hackathon{
+.hackathon {
     background: #fff;
     padding: 2rem;
     margin: 2rem auto;
-    max-width: 800px;
+    max-width: 80vw;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
 
 
-img{
+img {
     /* max-width: 100%;
     height: auto; */
     width: 60%;
@@ -30,18 +29,19 @@ img{
     padding: 2rem;
     margin-top: 3rem;
     border-radius: 16px;
-    
-  }
+    max-width: 80vw;
+
+}
 
 
-.technieken li{
+.technieken li {
     list-style: none;
     position: relative;
     padding-left: 1.5em;
     margin-bottom: 0.5rem;
 }
 
-.technieken li::before{
+.technieken li::before {
     content: "✨";
     position: absolute;
     left: 0;
@@ -70,6 +70,3 @@ h1 {
         border-color: transparent;
     }
 }
-
-
-
