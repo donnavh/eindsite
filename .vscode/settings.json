@@ -1,4 +1,5 @@
 {
-    "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
-    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true
+  "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
+  "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
+  "liveServer.settings.port": 5501
 }
