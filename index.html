@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- add header so mobile menu works and site is consistent -->
+    <header>
+      <button
+        class="menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leerdoelen.html">Leerdoelen</a></li>
+          <li><a href="weeklynerd.html">Weekly Nerd</a></li>
+          <li><a href="hackaton.html">Hackathon</a></li>
+          <li><a href="meesterproef.html">Over mij</a></li>
+          <li><a href="vakken.html">Vakken</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <h1>Donna van Haastrecht</h1>
 
@@ -24,65 +45,48 @@
           <div>
             <h2>Hi, ik ben Donna 👋</h2>
             <p>
-              Dit is mijn persoonlijke blog waar ik mijn ervaringen en
-              leerdoelen deel tijdens <strong>Web design & development</strong>.
+              Deze site gebruik ik als mijn portfolio: hier toon ik projecten,
+              reflecties en wat ik geleerd heb tijdens Web Design & Development.
             </p>
             <p>
-              Hier vind je mijn reflecties, projecten en informatie over
-              gastsprekers die zijn geweest.
+              <a href="mailto:donnavh02@gmail.com">Contact</a> •
+              <a href="meesterproef.html">Bekijk project: Gedenkmuur</a>
             </p>
-            <!-- <div class="animated-circle"></div> -->
           </div>
         </section>
       </section>
 
-      <section class="blog-overzicht">
-        <h2>Over mijn minor-ervaring</h2>
+      <!-- Replace blog-overzicht with project gallery (use existing pages as project details) -->
+      <section class="project-gallery">
+        <h2>Projecten</h2>
 
-        <article class="blog-post">
-          <h3>📌 Leerdoelen</h3>
+        <article class="project-card">
+          <h3>🏆 Meesterproef — Gedenkmuur</h3>
           <p>
-            In de eerste week van de minor hebben wij persoonlijke leerdoelen
-            opgesteld die we tijdens het halfjaar wilden behalen...
+            Korte omschrijving van het project en jouw rol. Gebruik de
+            detailpagina voor meer informatie.
           </p>
-          <a href="leerdoelen.html" class="button">Lees meer</a>
+          <a href="meesterproef.html" class="button">Bekijk project</a>
         </article>
 
-        <article class="blog-post">
-          <h3>🎙️ Weekly Nerd (Gastsprekers)</h3>
-          <p>
-            Elke week kwam er een professional uit het werkveld iets vertellen
-            over hun expertise, hun visie en hun projecten...
-          </p>
-          <a href="weeklynerd.html" class="button">Lees meer</a>
+        <article class="project-card">
+          <h3>🚀 Hackathon — Women in Tech</h3>
+          <p>Carousel & cards, experimentele technieken en mijn bijdrage.</p>
+          <a href="hackaton.html" class="button">Bekijk project</a>
         </article>
 
-        <article class="blog-post">
-          <h3>🚀 Hackathon</h3>
+        <article class="project-card">
+          <h3>🎙️ Weekly Nerd — Gastsprekers</h3>
           <p>
-            Als afsluiting van de eerste helft van de minor hebben we in
-            teamverband gewerkt aan een intensieve hackathon-week vol uitdaging
-            en creativiteit...
+            Documentatie en reflecties over gastsprekers en wat ik geleerd heb.
           </p>
-          <a href="hackaton.html" class="button">Lees meer</a>
+          <a href="weeklynerd.html" class="button">Bekijk project</a>
         </article>
 
-        <article class="blog-post">
-          <h3>🏆 Meesterproef</h3>
-          <p>
-            De meesterproef is het hoogtepunt van de minor waarin we alles wat
-            we hebben geleerd toepassen in een groot project...
-          </p>
-          <a href="meesterproef.html" class="button">Lees meer</a>
-        </article>
-
-        <article class="blog-post">
-          <h3>📚 Vakken</h3>
-          <p>
-            Tijdens de minor hebben we verschillende vakken gevolgd die ons
-            hebben geholpen om onze vaardigheden te verbeteren...
-          </p>
-          <a href="vakken.html" class="button">Lees meer</a>
+        <article class="project-card">
+          <h3>📚 Vakken — Overzicht</h3>
+          <p>Korte samenvattingen van vakken en concrete resultaten.</p>
+          <a href="vakken.html" class="button">Bekijk details</a>
         </article>
       </section>
     </main>

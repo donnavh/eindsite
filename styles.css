@@ -182,6 +182,34 @@ main {
   padding: 0 1.5rem;
 }
 
+/* constrain readable content site-wide */
+main,
+main section,
+article,
+.project-card,
+.project-gallery,
+.card,
+.weeklynerd,
+.proces,
+.vak,
+.reflectie {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* simple project card styling */
+.project-gallery {
+  padding: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  margin-bottom: 1rem;
+}
 
 section {
   margin-bottom: 3rem;
